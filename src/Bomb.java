@@ -1,9 +1,17 @@
-public abstract class Bomb extends Soldier implements Explode {
-    public String toString() {
-        return "it's gonna blow";
-    }
+public class Bomb extends Soldier implements Explode {
+
     Bomb(){
 
+
     }
 
+    @Override
+    public String speak() {
+        return "BOOOOM!";
+    }
+
+    @Override
+    public String boombang() {
+        return "bangboom";
+    }
 }

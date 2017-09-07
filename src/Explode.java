@@ -1,6 +1,9 @@
 public interface Explode {
+    default String boombang() {
+        return "boomer";
+    }
 
-    default void blowitup(){};
+    String speak();
 
 }
 
